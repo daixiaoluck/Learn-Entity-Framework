@@ -8,17 +8,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ConsoleApp1
 {
+    public enum HongKongAdministrativeDivision
+    {
+        New_Territories,
+        Kowloon,
+        Hong_Kong_Island
+    }
     public class Area
     {
-        [Key]
-        public int Value { get; set; }
-        public string Text { get; set; }
-        [ForeignKey("Location")]
-        public ICollection<Profile> Profiles { get; set; }
-
-        public Area()
-        {
-            Profiles = new HashSet<Profile>();
-        }
+        public int Id { get; set; }
+        public HongKongAdministrativeDivision HKAD { get; set; }
     }
 }

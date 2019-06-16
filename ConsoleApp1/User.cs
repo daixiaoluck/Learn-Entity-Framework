@@ -10,8 +10,7 @@ namespace ConsoleApp1
     public class User
     {
         public int Id { get; set; }
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-        public Profile Profile { get; set; }
+        // One to Many
+        public Area Area { get; set; }
     }
 }

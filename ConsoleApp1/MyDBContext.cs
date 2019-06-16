@@ -10,7 +10,6 @@ namespace ConsoleApp1
     public class MyDBContext:DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Profile> Profiles { get; set; }
         public DbSet<Area> Areas { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<UserScore> UserScores { get; set; }

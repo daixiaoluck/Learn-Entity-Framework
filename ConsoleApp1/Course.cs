@@ -11,11 +11,5 @@ namespace ConsoleApp1
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<UserScore> UserScores { get; set; }
-
-        public Course()
-        {
-            UserScores = new HashSet<UserScore>();
-        }
     }
 }
